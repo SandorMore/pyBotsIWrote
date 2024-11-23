@@ -9,6 +9,8 @@ import sys
 
 def enter():
     keyboard.send("enter")
+def pickChampForUser():
+    whatChamp = str(input("What champion do you want the bot to pick for you?"))
 def bring_window_to_foreground(window_title):
 
     try:
