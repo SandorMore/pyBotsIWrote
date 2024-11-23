@@ -76,16 +76,12 @@ if __name__ == "__main__":
 
     target_window_title = "League of Legends"
 
-
     x_offset = 450
     y_offset = 430
 
     check_interval = 1  
-    
-
 
     stop_event = threading.Event()
-
 
     bot_thread = threading.Thread(target=monitor_and_click, args=(target_window_title, x_offset, y_offset, check_interval, stop_event))
     bot_thread.start()
