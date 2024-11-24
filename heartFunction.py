@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # Define parameters and constants
 k = 100  # You can vary 'k' as needed
-x = np.linspace(-np.sqrt(3), np.sqrt(3), 100)  # Limit the range of x for sqrt(3-x^2)
+x = np.linspace(-np.sqrt(3), np.sqrt(3), 120)  # Limit the range of x for sqrt(3-x^2)
 
 # Define the equation
 y = x**(3/2) + 0.9 * np.sin(k * x) * np.sqrt(3 - x**2)
