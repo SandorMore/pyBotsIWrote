@@ -1,3 +1,5 @@
+import statistics
+
 userInput = int(input("Write the number you want to have its absolute value: "))
 
 def getAbs():
@@ -22,8 +24,10 @@ def findMedian(*nums):
         medianIfOdd = nums[int(len(nums) / 2)]
         print(medianIfOdd)
     elif len(nums) % 2 == 0:
-        medianIfEven = (nums[int(len(nums) / 2)] + nums[(int(len(nums) / 2)) + 1]) / 2
+        medianIfEven = ((nums[int(len(nums) / 2)] + nums[(int(len(nums) / 2)) + 1]) / 2) - 1
         print(medianIfEven)
 
 
-findMedian(1,2,3,4,5,6,7,8,11,22)
+findMedian(1,2,3,4,5,6,7,8,11,22,21,33,12,36,2.3,4.4,3.6,4.2, 11.7)
+listcheck = [1,2,3,4,5,6,7,8,11,22,21,33,12,36,2.3,4.4,3.6,4.2, 11.7]
+print(statistics.median(listcheck))
