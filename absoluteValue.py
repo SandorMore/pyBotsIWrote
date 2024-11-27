@@ -10,9 +10,12 @@ def getAbs():
 
 getAbs()
 
-def findMedian(nums = []):
+def findMedian(*nums):
+    nums = list(nums)
     nums.sort()
-    if nums.lenth % 2 != 0:
+    if len(nums) % 2 != 0:
         print("A lista páratlan hoszzú!")
     else:
-        print("A list a páros hosszú!")
+        print("A list páros hosszú!")
+
+findMedian(1,2,3,4,5,6,7,8)
