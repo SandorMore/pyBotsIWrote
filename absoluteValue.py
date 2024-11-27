@@ -3,8 +3,9 @@ userInput = int(input("Write the number you want to have its absolute value: "))
 def getAbs():
     global userInput
     if userInput > 0:
-        return userInput
+        print(userInput)
     else:
-        return userInput * -1
+        userInput = userInput * -1
+        print(userInput)
 
 getAbs()
