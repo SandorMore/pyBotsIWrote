@@ -18,14 +18,12 @@ def findMedian(*nums):
     else:
         print("A list páros hosszú!")
 
-    proceed = str(input("Keressük meg a mediánját a listának? (y/n)"))
-    if proceed.upper() == "y":
-        if len(nums) % 2 != 0:
-            medianIfOdd = nums[int(len(nums) / 2)]
-            print(medianIfOdd)
-        elif len(nums) % 2 == 0:
-            medianIfEven = (nums[int(len(nums) / 2)] + nums[(int(len(nums) / 2)) + 1]) / 2
-            print(medianIfEven)
+    if len(nums) % 2 != 0:
+        medianIfOdd = nums[int(len(nums) / 2)]
+        print(medianIfOdd)
+    elif len(nums) % 2 == 0:
+        medianIfEven = (nums[int(len(nums) / 2)] + nums[(int(len(nums) / 2)) + 1]) / 2
+        print(medianIfEven)
 
 
-findMedian(1,2,3,4,5,6,7,8,11)
+findMedian(1,2,3,4,5,6,7,8,11,22)
