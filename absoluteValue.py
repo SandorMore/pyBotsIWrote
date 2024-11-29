@@ -19,15 +19,13 @@ def findMedian(*nums):
         print("A lista páratlan hoszzú!")
     else:
         print("A list páros hosszú!")
+    n = len(nums)
+    if n % 2 == 1:
+        print(nums[n // 2])
+    else:
+        i = n // 2
+        print((nums[i - 1] + nums[i]) / 2)
 
-    if len(nums) % 2 != 0:
-        medianIfOdd = nums[int(len(nums) / 2)]
-        print(medianIfOdd)
-    elif len(nums) % 2 == 0:
-        medianIfEven = ((nums[int(len(nums) / 2)] + nums[(int(len(nums) / 2)) + 1]) / 2) - 1
-        print(medianIfEven)
-
-
-findMedian(1,2,3,4,5,6,7,8,11,22,21,33,12,36,2.3,4.4,3.6,4.2, 11.7)
-listcheck = [1,2,3,4,5,6,7,8,11,22,21,33,12,36,2.3,4.4,3.6,4.2, 11.7]
+findMedian(1,2,3,4,5,6,7,8,11,22,21,33,12,36,2.3,4.4,3.6,4.2, 11.7,42, 55, 6.5, 22.4, 7.7)
+listcheck = [1,2,3,4,5,6,7,8,11,22,21,33,12,36,2.3,4.4,3.6,4.2, 11.7,42, 55, 6.5, 22.4,7.7]
 print(statistics.median(listcheck))
